@@ -1,0 +1,39 @@
+{
+  "orientation": "Vertical",
+  "nodeLayouts": {
+    "inputs": {
+      "x": 12,
+      "y": 62,
+      "index": -1
+    },
+    "outputs": {
+      "x": 12,
+      "y": 612,
+      "index": -1
+    },
+    "get_wiki_url": {
+      "x": 67.5,
+      "y": 172,
+      "height": 75,
+      "index": 0
+    },
+    "search_result_from_url": {
+      "x": 67.5,
+      "y": 282,
+      "height": 75,
+      "index": 1
+    },
+    "process_search_result": {
+      "x": 67.5,
+      "y": 392,
+      "height": 75,
+      "index": 2
+    },
+    "augmented_qna": {
+      "x": 12,
+      "y": 502,
+      "height": 75,
+      "index": 3
+    }
+  }
+}

@@ -1,12 +1,5 @@
 # Ignore all files under .run/ and .promptflow/
 **/.run/*
 **/.run/*/
-**/.promptflow/*
-**/.promptflow/*/
 **/__pycache__/*
 
-
-# Ignore the .run/ and .promptflow/ directories themselves
-**/.run/
-**/.promptflow/
-**/__pycache__/

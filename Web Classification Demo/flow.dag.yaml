@@ -30,11 +30,9 @@ nodes:
     deployment_name: turbo-35
     temperature: 0.2
     top_p: 1
-    stop: ""
     max_tokens: 128
     presence_penalty: 0
     frequency_penalty: 0
-    logit_bias: ""
     text: ${fetch_text_content_from_url.output}
   provider: AzureOpenAI
   connection: PMOpenAI
@@ -57,11 +55,9 @@ nodes:
     deployment_name: gpt-35-turbo-16k
     temperature: 0
     top_p: 1
-    stop: ""
     max_tokens: 256
     presence_penalty: 0
     frequency_penalty: 0
-    logit_bias: ""
     url: ${inputs.url}
     examples: ${prepare_examples.output}
     text_content: ${summarize_text_content.output}
@@ -78,4 +74,3 @@ nodes:
   inputs:
     input_str: ${classify_with_llm.output}
   use_variants: false
-node_variants: {}

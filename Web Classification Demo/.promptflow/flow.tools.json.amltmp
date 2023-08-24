@@ -78,6 +78,31 @@
       "name": "convert_to_dict.py",
       "source": "convert_to_dict.py",
       "toolId": "convert_to_dict.py"
+    },
+    "classify_with_llm__variant_1.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "url": {
+          "type": [
+            "string"
+          ]
+        },
+        "examples": {
+          "type": [
+            "string"
+          ]
+        },
+        "text_content": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "description": "Multi-class classification of a given url and text content.",
+      "is_builtin": false,
+      "name": "classify_with_llm__variant_1.jinja2",
+      "source": "classify_with_llm__variant_1.jinja2",
+      "toolId": "classify_with_llm__variant_1.jinja2"
     }
   }
 }

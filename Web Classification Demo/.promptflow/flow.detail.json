@@ -1,7 +1,7 @@
 {
   "flow_runs": [
     {
-      "run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a_0",
+      "run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2_0",
       "status": "Completed",
       "error": null,
       "inputs": {
@@ -13,12 +13,12 @@
       },
       "metrics": null,
       "request": null,
-      "parent_run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a",
-      "root_run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a",
+      "parent_run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2",
+      "root_run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2",
       "source_run_id": null,
       "flow_id": "web_classification",
-      "start_time": "2023-08-24T03:43:52.117807Z",
-      "end_time": "2023-08-24T03:44:01.200459Z",
+      "start_time": "2023-08-24T07:06:16.267059Z",
+      "end_time": "2023-08-24T07:06:26.804354Z",
       "index": 0,
       "api_calls": [
         {
@@ -28,11 +28,47 @@
             "url": "https://www.microsoft.com/en-us/d/xbox-wireless-controller-stellar-shift-special-edition/94fbjc7h0h6h"
           },
           "output": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXbox Wireless Controller \u2013 Stellar Shift Special Edition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                            Translate to English\n                        \n\n\n\n\n\n\n\n                            You are shopping Microsoft Store in: {0}\n                        \n\n\n\n\n\n\n\n                            Are you looking for Microsoft Store in: {0}?\n                        \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                    Stay in {0}\n                                \n\n\n\n                                    Go to {0}\n                                \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        \n            Sign me up\n        \n        \n    \n\n\n\n        \n            Thank you!\n        \n        \n    \n\n\n\n\n\n\n\nStay informed about special deals, the latest products, events and more from Microsoft Store.\n\nEmail address (required)\n\n\n\n\nLocation (required)\n\n\nArgentina\nAustralia\nAustria\nBelgium\nBrazil\nCanada\nChile\nColombia\nCzech Republic\nDenmark\nFinland\nFrance\nGermany\nHungary\nIndia\nIreland\nIsrael\nItaly\nJapan\nLuxembourg\nMexico\nNetherlands\nNew Zealand\nNorway\nPoland\nPortugal\nSingapore\nSouth Africa\nSouth Korea\nSpain\nSweden\nTurkey\nSwitzerland\nUnited Kingdom\nUnited States\n\n\n\n\n\n\n                                    I would like information, tips, and offers about Microsoft Store and other Microsoft products and services.\n                                    \n\n                                        Privacy statement\n                                    \n.\n\n\nBy clicking sign up, I agree that I would like to hear from Microsoft and its family of companies about Microsoft Store and other Microsoft products and services.\nTo withdraw consent or manage your contact preferences, visit the\u00a0Promotional Communications Manager.\n\n\n                                        Privacy statement\n                                    \n.\n\n\n\n        Sign Up\n    \n\n\n\nYou\u2019re now signed up to receive Microsoft Store emails. Thank you!\n\n\n\n\n\n\n\n\n\n\n\n\n                  ",
-          "start_time": 1692819832.119804,
-          "end_time": 1692819837.794238,
+          "start_time": 1692831976.276119,
+          "end_time": 1692831981.090369,
           "error": null,
           "children": null,
           "node_name": "fetch_text_content_from_url"
+        },
+        {
+          "name": "prepare_examples",
+          "type": "Tool",
+          "inputs": {},
+          "output": [
+            {
+              "url": "https://play.google.com/store/apps/details?id=com.spotify.music",
+              "text_content": "Spotify is a free music and podcast streaming app with millions of songs, albums, and original podcasts. It also offers audiobooks, so users can enjoy thousands of stories. It has a variety of features such as creating and sharing music playlists, discovering new music, and listening to popular and exclusive podcasts. It also has a Premium subscription option which allows users to download and listen offline, and access ad-free music. It is available on all devices and has a variety of genres and artists to choose from.",
+              "category": "App",
+              "evidence": "Both"
+            },
+            {
+              "url": "https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw",
+              "text_content": "NFL Sunday Ticket is a service offered by Google LLC that allows users to watch NFL games on YouTube. It is available in 2023 and is subject to the terms and privacy policy of Google LLC. It is also subject to YouTube's terms of use and any applicable laws.",
+              "category": "Channel",
+              "evidence": "URL"
+            },
+            {
+              "url": "https://arxiv.org/abs/2303.04671",
+              "text_content": "Visual ChatGPT is a system that enables users to interact with ChatGPT by sending and receiving not only languages but also images, providing complex visual questions or visual editing instructions, and providing feedback and asking for corrected results. It incorporates different Visual Foundation Models and is publicly available. Experiments show that Visual ChatGPT opens the door to investigating the visual roles of ChatGPT with the help of Visual Foundation Models.",
+              "category": "Academic",
+              "evidence": "Text content"
+            },
+            {
+              "url": "https://ab.politiaromana.ro/",
+              "text_content": "There is no content available for this text.",
+              "category": "None",
+              "evidence": "Both"
+            }
+          ],
+          "start_time": 1692831976.276119,
+          "end_time": 1692831977.545051,
+          "error": null,
+          "children": null,
+          "node_name": "prepare_examples"
         },
         {
           "name": "AzureOpenAI.chat",
@@ -47,9 +83,9 @@
             "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXbox Wireless Controller \u2013 Stellar Shift Special Edition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                            Translate to English\n                        \n\n\n\n\n\n\n\n                            You are shopping Microsoft Store in: {0}\n                        \n\n\n\n\n\n\n\n                            Are you looking for Microsoft Store in: {0}?\n                        \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                    Stay in {0}\n                                \n\n\n\n                                    Go to {0}\n                                \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        \n            Sign me up\n        \n        \n    \n\n\n\n        \n            Thank you!\n        \n        \n    \n\n\n\n\n\n\n\nStay informed about special deals, the latest products, events and more from Microsoft Store.\n\nEmail address (required)\n\n\n\n\nLocation (required)\n\n\nArgentina\nAustralia\nAustria\nBelgium\nBrazil\nCanada\nChile\nColombia\nCzech Republic\nDenmark\nFinland\nFrance\nGermany\nHungary\nIndia\nIreland\nIsrael\nItaly\nJapan\nLuxembourg\nMexico\nNetherlands\nNew Zealand\nNorway\nPoland\nPortugal\nSingapore\nSouth Africa\nSouth Korea\nSpain\nSweden\nTurkey\nSwitzerland\nUnited Kingdom\nUnited States\n\n\n\n\n\n\n                                    I would like information, tips, and offers about Microsoft Store and other Microsoft products and services.\n                                    \n\n                                        Privacy statement\n                                    \n.\n\n\nBy clicking sign up, I agree that I would like to hear from Microsoft and its family of companies about Microsoft Store and other Microsoft products and services.\nTo withdraw consent or manage your contact preferences, visit the\u00a0Promotional Communications Manager.\n\n\n                                        Privacy statement\n                                    \n.\n\n\n\n        Sign Up\n    \n\n\n\nYou\u2019re now signed up to receive Microsoft Store emails. Thank you!\n\n\n\n\n\n\n\n\n\n\n\n\n                  ",
             "top_p": 1.0
           },
-          "output": "The text does not provide any information or content to summarize.",
-          "start_time": 1692819837.799234,
-          "end_time": 1692819840.264488,
+          "output": "The text does not contain any information or content. It appears to be a placeholder or template for a sign-up form for Microsoft Store emails.",
+          "start_time": 1692831981.099355,
+          "end_time": 1692831984.434459,
           "error": null,
           "children": [
             {
@@ -82,9 +118,9 @@
                 "user": ""
               },
               "output": {
-                "id": "chatcmpl-7qvYFlya6vnFFvzv1eVEdaMkHDHfw",
+                "id": "chatcmpl-7qyi7sW2AL32sLZn5C0z5uSl4AvKo",
                 "object": "chat.completion",
-                "created": 1692848639,
+                "created": 1692860783,
                 "model": "gpt-35-turbo",
                 "choices": [
                   {
@@ -92,60 +128,24 @@
                     "finish_reason": "stop",
                     "message": {
                       "role": "assistant",
-                      "content": "The text does not provide any information or content to summarize."
+                      "content": "The text does not contain any information or content. It appears to be a placeholder or template for a sign-up form for Microsoft Store emails."
                     }
                   }
                 ],
                 "usage": {
-                  "completion_tokens": 12,
+                  "completion_tokens": 28,
                   "prompt_tokens": 349,
-                  "total_tokens": 361
+                  "total_tokens": 377
                 }
               },
-              "start_time": 1692819837.809476,
-              "end_time": 1692819840.263492,
+              "start_time": 1692831981.114016,
+              "end_time": 1692831984.434459,
               "error": null,
               "children": null,
               "node_name": null
             }
           ],
           "node_name": "summarize_text_content"
-        },
-        {
-          "name": "prepare_examples",
-          "type": "Tool",
-          "inputs": {},
-          "output": [
-            {
-              "url": "https://play.google.com/store/apps/details?id=com.spotify.music",
-              "text_content": "Spotify is a free music and podcast streaming app with millions of songs, albums, and original podcasts. It also offers audiobooks, so users can enjoy thousands of stories. It has a variety of features such as creating and sharing music playlists, discovering new music, and listening to popular and exclusive podcasts. It also has a Premium subscription option which allows users to download and listen offline, and access ad-free music. It is available on all devices and has a variety of genres and artists to choose from.",
-              "category": "App",
-              "evidence": "Both"
-            },
-            {
-              "url": "https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw",
-              "text_content": "NFL Sunday Ticket is a service offered by Google LLC that allows users to watch NFL games on YouTube. It is available in 2023 and is subject to the terms and privacy policy of Google LLC. It is also subject to YouTube's terms of use and any applicable laws.",
-              "category": "Channel",
-              "evidence": "URL"
-            },
-            {
-              "url": "https://arxiv.org/abs/2303.04671",
-              "text_content": "Visual ChatGPT is a system that enables users to interact with ChatGPT by sending and receiving not only languages but also images, providing complex visual questions or visual editing instructions, and providing feedback and asking for corrected results. It incorporates different Visual Foundation Models and is publicly available. Experiments show that Visual ChatGPT opens the door to investigating the visual roles of ChatGPT with the help of Visual Foundation Models.",
-              "category": "Academic",
-              "evidence": "Text content"
-            },
-            {
-              "url": "https://ab.politiaromana.ro/",
-              "text_content": "There is no content available for this text.",
-              "category": "None",
-              "evidence": "Both"
-            }
-          ],
-          "start_time": 1692819840.285823,
-          "end_time": 1692819840.287825,
-          "error": null,
-          "children": null,
-          "node_name": "prepare_examples"
         },
         {
           "name": "AzureOpenAI.chat",
@@ -183,13 +183,13 @@
             "max_tokens": 256,
             "presence_penalty": 0.0,
             "temperature": 0.0,
-            "text_content": "The text does not provide any information or content to summarize.",
+            "text_content": "The text does not contain any information or content. It appears to be a placeholder or template for a sign-up form for Microsoft Store emails.",
             "top_p": 1.0,
             "url": "https://www.microsoft.com/en-us/d/xbox-wireless-controller-stellar-shift-special-edition/94fbjc7h0h6h"
           },
           "output": "{\"category\": \"None\", \"evidence\": \"Both\"}",
-          "start_time": 1692819840.291344,
-          "end_time": 1692819841.196347,
+          "start_time": 1692831984.434459,
+          "end_time": 1692831986.777785,
           "error": null,
           "children": [
             {
@@ -207,7 +207,7 @@
                   },
                   {
                     "role": "user",
-                    "content": "The selection range of the value of \"category\" must be within \"Movie\", \"App\", \"Academic\", \"Channel\", \"Profile\", \"PDF\" and \"None\".\nThe selection range of the value of \"evidence\" must be within \"Url\", \"Text content\", and \"Both\".\nHere are a few examples:\nURL: https://play.google.com/store/apps/details?id=com.spotify.music\nText content: Spotify is a free music and podcast streaming app with millions of songs, albums, and original podcasts. It also offers audiobooks, so users can enjoy thousands of stories. It has a variety of features such as creating and sharing music playlists, discovering new music, and listening to popular and exclusive podcasts. It also has a Premium subscription option which allows users to download and listen offline, and access ad-free music. It is available on all devices and has a variety of genres and artists to choose from.\nOUTPUT:\n{\"category\": \"App\", \"evidence\": \"Both\"}\n\nURL: https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw\nText content: NFL Sunday Ticket is a service offered by Google LLC that allows users to watch NFL games on YouTube. It is available in 2023 and is subject to the terms and privacy policy of Google LLC. It is also subject to YouTube's terms of use and any applicable laws.\nOUTPUT:\n{\"category\": \"Channel\", \"evidence\": \"URL\"}\n\nURL: https://arxiv.org/abs/2303.04671\nText content: Visual ChatGPT is a system that enables users to interact with ChatGPT by sending and receiving not only languages but also images, providing complex visual questions or visual editing instructions, and providing feedback and asking for corrected results. It incorporates different Visual Foundation Models and is publicly available. Experiments show that Visual ChatGPT opens the door to investigating the visual roles of ChatGPT with the help of Visual Foundation Models.\nOUTPUT:\n{\"category\": \"Academic\", \"evidence\": \"Text content\"}\n\nURL: https://ab.politiaromana.ro/\nText content: There is no content available for this text.\nOUTPUT:\n{\"category\": \"None\", \"evidence\": \"Both\"}\n\n\nFor a given URL and text content, classify the url to complete the category and indicate evidence:\nURL: https://www.microsoft.com/en-us/d/xbox-wireless-controller-stellar-shift-special-edition/94fbjc7h0h6h\nText content: The text does not provide any information or content to summarize..\nOUTPUT:"
+                    "content": "The selection range of the value of \"category\" must be within \"Movie\", \"App\", \"Academic\", \"Channel\", \"Profile\", \"PDF\" and \"None\".\nThe selection range of the value of \"evidence\" must be within \"Url\", \"Text content\", and \"Both\".\nHere are a few examples:\nURL: https://play.google.com/store/apps/details?id=com.spotify.music\nText content: Spotify is a free music and podcast streaming app with millions of songs, albums, and original podcasts. It also offers audiobooks, so users can enjoy thousands of stories. It has a variety of features such as creating and sharing music playlists, discovering new music, and listening to popular and exclusive podcasts. It also has a Premium subscription option which allows users to download and listen offline, and access ad-free music. It is available on all devices and has a variety of genres and artists to choose from.\nOUTPUT:\n{\"category\": \"App\", \"evidence\": \"Both\"}\n\nURL: https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw\nText content: NFL Sunday Ticket is a service offered by Google LLC that allows users to watch NFL games on YouTube. It is available in 2023 and is subject to the terms and privacy policy of Google LLC. It is also subject to YouTube's terms of use and any applicable laws.\nOUTPUT:\n{\"category\": \"Channel\", \"evidence\": \"URL\"}\n\nURL: https://arxiv.org/abs/2303.04671\nText content: Visual ChatGPT is a system that enables users to interact with ChatGPT by sending and receiving not only languages but also images, providing complex visual questions or visual editing instructions, and providing feedback and asking for corrected results. It incorporates different Visual Foundation Models and is publicly available. Experiments show that Visual ChatGPT opens the door to investigating the visual roles of ChatGPT with the help of Visual Foundation Models.\nOUTPUT:\n{\"category\": \"Academic\", \"evidence\": \"Text content\"}\n\nURL: https://ab.politiaromana.ro/\nText content: There is no content available for this text.\nOUTPUT:\n{\"category\": \"None\", \"evidence\": \"Both\"}\n\n\nFor a given URL and text content, classify the url to complete the category and indicate evidence:\nURL: https://www.microsoft.com/en-us/d/xbox-wireless-controller-stellar-shift-special-edition/94fbjc7h0h6h\nText content: The text does not contain any information or content. It appears to be a placeholder or template for a sign-up form for Microsoft Store emails..\nOUTPUT:"
                   }
                 ],
                 "temperature": 0.0,
@@ -222,9 +222,9 @@
                 "user": ""
               },
               "output": {
-                "id": "chatcmpl-7qvYGZSblQrxWDFkY9EXpSz1yr3lF",
+                "id": "chatcmpl-7qyiAUq3nckOBqlXZVRlp4dMRDm9z",
                 "object": "chat.completion",
-                "created": 1692848640,
+                "created": 1692860786,
                 "model": "gpt-35-turbo-16k",
                 "choices": [
                   {
@@ -238,12 +238,12 @@
                 ],
                 "usage": {
                   "completion_tokens": 13,
-                  "prompt_tokens": 595,
-                  "total_tokens": 608
+                  "prompt_tokens": 611,
+                  "total_tokens": 624
                 }
               },
-              "start_time": 1692819840.297886,
-              "end_time": 1692819841.196347,
+              "start_time": 1692831984.458192,
+              "end_time": 1692831986.776784,
               "error": null,
               "children": null,
               "node_name": null
@@ -261,8 +261,8 @@
             "category": "None",
             "evidence": "Both"
           },
-          "start_time": 1692819841.199461,
-          "end_time": 1692819841.199461,
+          "start_time": 1692831986.78782,
+          "end_time": 1692831986.788818,
           "error": null,
           "children": null,
           "node_name": "convert_to_dict"
@@ -273,8 +273,8 @@
       "description": "",
       "tags": null,
       "system_metrics": {
-        "duration": 9.082652,
-        "total_tokens": 969
+        "duration": 10.537295,
+        "total_tokens": 1001
       },
       "result": {
         "category": "None",
@@ -286,8 +286,8 @@
   "node_runs": [
     {
       "node": "fetch_text_content_from_url",
-      "flow_run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a",
-      "run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a_fetch_text_content_from_url_0",
+      "flow_run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2",
+      "run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2_fetch_text_content_from_url_0",
       "status": "Completed",
       "inputs": {
         "url": "https://www.microsoft.com/en-us/d/xbox-wireless-controller-stellar-shift-special-edition/94fbjc7h0h6h"
@@ -295,9 +295,9 @@
       "output": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXbox Wireless Controller \u2013 Stellar Shift Special Edition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                            Translate to English\n                        \n\n\n\n\n\n\n\n                            You are shopping Microsoft Store in: {0}\n                        \n\n\n\n\n\n\n\n                            Are you looking for Microsoft Store in: {0}?\n                        \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                    Stay in {0}\n                                \n\n\n\n                                    Go to {0}\n                                \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        \n            Sign me up\n        \n        \n    \n\n\n\n        \n            Thank you!\n        \n        \n    \n\n\n\n\n\n\n\nStay informed about special deals, the latest products, events and more from Microsoft Store.\n\nEmail address (required)\n\n\n\n\nLocation (required)\n\n\nArgentina\nAustralia\nAustria\nBelgium\nBrazil\nCanada\nChile\nColombia\nCzech Republic\nDenmark\nFinland\nFrance\nGermany\nHungary\nIndia\nIreland\nIsrael\nItaly\nJapan\nLuxembourg\nMexico\nNetherlands\nNew Zealand\nNorway\nPoland\nPortugal\nSingapore\nSouth Africa\nSouth Korea\nSpain\nSweden\nTurkey\nSwitzerland\nUnited Kingdom\nUnited States\n\n\n\n\n\n\n                                    I would like information, tips, and offers about Microsoft Store and other Microsoft products and services.\n                                    \n\n                                        Privacy statement\n                                    \n.\n\n\nBy clicking sign up, I agree that I would like to hear from Microsoft and its family of companies about Microsoft Store and other Microsoft products and services.\nTo withdraw consent or manage your contact preferences, visit the\u00a0Promotional Communications Manager.\n\n\n                                        Privacy statement\n                                    \n.\n\n\n\n        Sign Up\n    \n\n\n\nYou\u2019re now signed up to receive Microsoft Store emails. Thank you!\n\n\n\n\n\n\n\n\n\n\n\n\n                  ",
       "metrics": null,
       "error": null,
-      "parent_run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a_0",
-      "start_time": "2023-08-24T03:43:52.119804Z",
-      "end_time": "2023-08-24T03:43:57.794238Z",
+      "parent_run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2_0",
+      "start_time": "2023-08-24T07:06:16.276119Z",
+      "end_time": "2023-08-24T07:06:21.091347Z",
       "index": 0,
       "api_calls": [
         {
@@ -307,8 +307,8 @@
             "url": "https://www.microsoft.com/en-us/d/xbox-wireless-controller-stellar-shift-special-edition/94fbjc7h0h6h"
           },
           "output": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXbox Wireless Controller \u2013 Stellar Shift Special Edition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                            Translate to English\n                        \n\n\n\n\n\n\n\n                            You are shopping Microsoft Store in: {0}\n                        \n\n\n\n\n\n\n\n                            Are you looking for Microsoft Store in: {0}?\n                        \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                    Stay in {0}\n                                \n\n\n\n                                    Go to {0}\n                                \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        \n            Sign me up\n        \n        \n    \n\n\n\n        \n            Thank you!\n        \n        \n    \n\n\n\n\n\n\n\nStay informed about special deals, the latest products, events and more from Microsoft Store.\n\nEmail address (required)\n\n\n\n\nLocation (required)\n\n\nArgentina\nAustralia\nAustria\nBelgium\nBrazil\nCanada\nChile\nColombia\nCzech Republic\nDenmark\nFinland\nFrance\nGermany\nHungary\nIndia\nIreland\nIsrael\nItaly\nJapan\nLuxembourg\nMexico\nNetherlands\nNew Zealand\nNorway\nPoland\nPortugal\nSingapore\nSouth Africa\nSouth Korea\nSpain\nSweden\nTurkey\nSwitzerland\nUnited Kingdom\nUnited States\n\n\n\n\n\n\n                                    I would like information, tips, and offers about Microsoft Store and other Microsoft products and services.\n                                    \n\n                                        Privacy statement\n                                    \n.\n\n\nBy clicking sign up, I agree that I would like to hear from Microsoft and its family of companies about Microsoft Store and other Microsoft products and services.\nTo withdraw consent or manage your contact preferences, visit the\u00a0Promotional Communications Manager.\n\n\n                                        Privacy statement\n                                    \n.\n\n\n\n        Sign Up\n    \n\n\n\nYou\u2019re now signed up to receive Microsoft Store emails. Thank you!\n\n\n\n\n\n\n\n\n\n\n\n\n                  ",
-          "start_time": 1692819832.119804,
-          "end_time": 1692819837.794238,
+          "start_time": 1692831976.276119,
+          "end_time": 1692831981.090369,
           "error": null,
           "children": null,
           "node_name": "fetch_text_content_from_url"
@@ -322,130 +322,14 @@
         "stderr": ""
       },
       "system_metrics": {
-        "duration": 5.674434
+        "duration": 4.815228
       },
       "result": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXbox Wireless Controller \u2013 Stellar Shift Special Edition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                            Translate to English\n                        \n\n\n\n\n\n\n\n                            You are shopping Microsoft Store in: {0}\n                        \n\n\n\n\n\n\n\n                            Are you looking for Microsoft Store in: {0}?\n                        \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                    Stay in {0}\n                                \n\n\n\n                                    Go to {0}\n                                \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        \n            Sign me up\n        \n        \n    \n\n\n\n        \n            Thank you!\n        \n        \n    \n\n\n\n\n\n\n\nStay informed about special deals, the latest products, events and more from Microsoft Store.\n\nEmail address (required)\n\n\n\n\nLocation (required)\n\n\nArgentina\nAustralia\nAustria\nBelgium\nBrazil\nCanada\nChile\nColombia\nCzech Republic\nDenmark\nFinland\nFrance\nGermany\nHungary\nIndia\nIreland\nIsrael\nItaly\nJapan\nLuxembourg\nMexico\nNetherlands\nNew Zealand\nNorway\nPoland\nPortugal\nSingapore\nSouth Africa\nSouth Korea\nSpain\nSweden\nTurkey\nSwitzerland\nUnited Kingdom\nUnited States\n\n\n\n\n\n\n                                    I would like information, tips, and offers about Microsoft Store and other Microsoft products and services.\n                                    \n\n                                        Privacy statement\n                                    \n.\n\n\nBy clicking sign up, I agree that I would like to hear from Microsoft and its family of companies about Microsoft Store and other Microsoft products and services.\nTo withdraw consent or manage your contact preferences, visit the\u00a0Promotional Communications Manager.\n\n\n                                        Privacy statement\n                                    \n.\n\n\n\n        Sign Up\n    \n\n\n\nYou\u2019re now signed up to receive Microsoft Store emails. Thank you!\n\n\n\n\n\n\n\n\n\n\n\n\n                  "
     },
     {
-      "node": "summarize_text_content",
-      "flow_run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a",
-      "run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a_summarize_text_content_0",
-      "status": "Completed",
-      "inputs": {
-        "prompt": "system:\nPlease summarize the following text in one paragraph. 100 words.\nDo not add any information that is not in the text.\n\nuser:\nText: {{text}}\nSummary: ",
-        "deployment_name": "turbo-35",
-        "frequency_penalty": 0.0,
-        "max_tokens": 128,
-        "presence_penalty": 0.0,
-        "temperature": 0.2,
-        "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXbox Wireless Controller \u2013 Stellar Shift Special Edition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                            Translate to English\n                        \n\n\n\n\n\n\n\n                            You are shopping Microsoft Store in: {0}\n                        \n\n\n\n\n\n\n\n                            Are you looking for Microsoft Store in: {0}?\n                        \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                    Stay in {0}\n                                \n\n\n\n                                    Go to {0}\n                                \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        \n            Sign me up\n        \n        \n    \n\n\n\n        \n            Thank you!\n        \n        \n    \n\n\n\n\n\n\n\nStay informed about special deals, the latest products, events and more from Microsoft Store.\n\nEmail address (required)\n\n\n\n\nLocation (required)\n\n\nArgentina\nAustralia\nAustria\nBelgium\nBrazil\nCanada\nChile\nColombia\nCzech Republic\nDenmark\nFinland\nFrance\nGermany\nHungary\nIndia\nIreland\nIsrael\nItaly\nJapan\nLuxembourg\nMexico\nNetherlands\nNew Zealand\nNorway\nPoland\nPortugal\nSingapore\nSouth Africa\nSouth Korea\nSpain\nSweden\nTurkey\nSwitzerland\nUnited Kingdom\nUnited States\n\n\n\n\n\n\n                                    I would like information, tips, and offers about Microsoft Store and other Microsoft products and services.\n                                    \n\n                                        Privacy statement\n                                    \n.\n\n\nBy clicking sign up, I agree that I would like to hear from Microsoft and its family of companies about Microsoft Store and other Microsoft products and services.\nTo withdraw consent or manage your contact preferences, visit the\u00a0Promotional Communications Manager.\n\n\n                                        Privacy statement\n                                    \n.\n\n\n\n        Sign Up\n    \n\n\n\nYou\u2019re now signed up to receive Microsoft Store emails. Thank you!\n\n\n\n\n\n\n\n\n\n\n\n\n                  ",
-        "top_p": 1.0
-      },
-      "output": "The text does not provide any information or content to summarize.",
-      "metrics": null,
-      "error": null,
-      "parent_run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a_0",
-      "start_time": "2023-08-24T03:43:57.799234Z",
-      "end_time": "2023-08-24T03:44:00.268038Z",
-      "index": 0,
-      "api_calls": [
-        {
-          "name": "AzureOpenAI.chat",
-          "type": "Tool",
-          "inputs": {
-            "prompt": "system:\nPlease summarize the following text in one paragraph. 100 words.\nDo not add any information that is not in the text.\n\nuser:\nText: {{text}}\nSummary: ",
-            "deployment_name": "turbo-35",
-            "frequency_penalty": 0.0,
-            "max_tokens": 128,
-            "presence_penalty": 0.0,
-            "temperature": 0.2,
-            "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXbox Wireless Controller \u2013 Stellar Shift Special Edition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                            Translate to English\n                        \n\n\n\n\n\n\n\n                            You are shopping Microsoft Store in: {0}\n                        \n\n\n\n\n\n\n\n                            Are you looking for Microsoft Store in: {0}?\n                        \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                    Stay in {0}\n                                \n\n\n\n                                    Go to {0}\n                                \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        \n            Sign me up\n        \n        \n    \n\n\n\n        \n            Thank you!\n        \n        \n    \n\n\n\n\n\n\n\nStay informed about special deals, the latest products, events and more from Microsoft Store.\n\nEmail address (required)\n\n\n\n\nLocation (required)\n\n\nArgentina\nAustralia\nAustria\nBelgium\nBrazil\nCanada\nChile\nColombia\nCzech Republic\nDenmark\nFinland\nFrance\nGermany\nHungary\nIndia\nIreland\nIsrael\nItaly\nJapan\nLuxembourg\nMexico\nNetherlands\nNew Zealand\nNorway\nPoland\nPortugal\nSingapore\nSouth Africa\nSouth Korea\nSpain\nSweden\nTurkey\nSwitzerland\nUnited Kingdom\nUnited States\n\n\n\n\n\n\n                                    I would like information, tips, and offers about Microsoft Store and other Microsoft products and services.\n                                    \n\n                                        Privacy statement\n                                    \n.\n\n\nBy clicking sign up, I agree that I would like to hear from Microsoft and its family of companies about Microsoft Store and other Microsoft products and services.\nTo withdraw consent or manage your contact preferences, visit the\u00a0Promotional Communications Manager.\n\n\n                                        Privacy statement\n                                    \n.\n\n\n\n        Sign Up\n    \n\n\n\nYou\u2019re now signed up to receive Microsoft Store emails. Thank you!\n\n\n\n\n\n\n\n\n\n\n\n\n                  ",
-            "top_p": 1.0
-          },
-          "output": "The text does not provide any information or content to summarize.",
-          "start_time": 1692819837.799234,
-          "end_time": 1692819840.264488,
-          "error": null,
-          "children": [
-            {
-              "name": "openai.api_resources.chat_completion.ChatCompletion.create",
-              "type": "LLM",
-              "inputs": {
-                "api_base": "https://pmopenai.openai.azure.com/",
-                "api_type": "azure",
-                "api_version": "2023-03-15-preview",
-                "engine": "turbo-35",
-                "messages": [
-                  {
-                    "role": "system",
-                    "content": "Please summarize the following text in one paragraph. 100 words.\nDo not add any information that is not in the text."
-                  },
-                  {
-                    "role": "user",
-                    "content": "Text: \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXbox Wireless Controller \u2013 Stellar Shift Special Edition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                            Translate to English\n                        \n\n\n\n\n\n\n\n                            You are shopping Microsoft Store in: {0}\n                        \n\n\n\n\n\n\n\n                            Are you looking for Microsoft Store in: {0}?\n                        \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                    Stay in {0}\n                                \n\n\n\n                                    Go to {0}\n                                \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        \n            Sign me up\n        \n        \n    \n\n\n\n        \n            Thank you!\n        \n        \n    \n\n\n\n\n\n\n\nStay informed about special deals, the latest products, events and more from Microsoft Store.\n\nEmail address (required)\n\n\n\n\nLocation (required)\n\n\nArgentina\nAustralia\nAustria\nBelgium\nBrazil\nCanada\nChile\nColombia\nCzech Republic\nDenmark\nFinland\nFrance\nGermany\nHungary\nIndia\nIreland\nIsrael\nItaly\nJapan\nLuxembourg\nMexico\nNetherlands\nNew Zealand\nNorway\nPoland\nPortugal\nSingapore\nSouth Africa\nSouth Korea\nSpain\nSweden\nTurkey\nSwitzerland\nUnited Kingdom\nUnited States\n\n\n\n\n\n\n                                    I would like information, tips, and offers about Microsoft Store and other Microsoft products and services.\n                                    \n\n                                        Privacy statement\n                                    \n.\n\n\nBy clicking sign up, I agree that I would like to hear from Microsoft and its family of companies about Microsoft Store and other Microsoft products and services.\nTo withdraw consent or manage your contact preferences, visit the\u00a0Promotional Communications Manager.\n\n\n                                        Privacy statement\n                                    \n.\n\n\n\n        Sign Up\n    \n\n\n\nYou\u2019re now signed up to receive Microsoft Store emails. Thank you!\n\n\n\n\n\n\n\n\n\n\n\n\n                  \nSummary: "
-                  }
-                ],
-                "temperature": 0.2,
-                "top_p": 1.0,
-                "n": 1,
-                "stream": false,
-                "stop": null,
-                "max_tokens": 128,
-                "presence_penalty": 0.0,
-                "frequency_penalty": 0.0,
-                "logit_bias": {},
-                "user": ""
-              },
-              "output": {
-                "id": "chatcmpl-7qvYFlya6vnFFvzv1eVEdaMkHDHfw",
-                "object": "chat.completion",
-                "created": 1692848639,
-                "model": "gpt-35-turbo",
-                "choices": [
-                  {
-                    "index": 0,
-                    "finish_reason": "stop",
-                    "message": {
-                      "role": "assistant",
-                      "content": "The text does not provide any information or content to summarize."
-                    }
-                  }
-                ],
-                "usage": {
-                  "completion_tokens": 12,
-                  "prompt_tokens": 349,
-                  "total_tokens": 361
-                }
-              },
-              "start_time": 1692819837.809476,
-              "end_time": 1692819840.263492,
-              "error": null,
-              "children": null,
-              "node_name": null
-            }
-          ],
-          "node_name": "summarize_text_content"
-        }
-      ],
-      "variant_id": "",
-      "cached_run_id": null,
-      "cached_flow_run_id": null,
-      "logs": {
-        "stdout": "",
-        "stderr": ""
-      },
-      "system_metrics": {
-        "completion_tokens": 12,
-        "prompt_tokens": 349,
-        "total_tokens": 361,
-        "duration": 2.468804
-      },
-      "result": "The text does not provide any information or content to summarize."
-    },
-    {
       "node": "prepare_examples",
-      "flow_run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a",
-      "run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a_prepare_examples_0",
+      "flow_run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2",
+      "run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2_prepare_examples_0",
       "status": "Completed",
       "inputs": {},
       "output": [
@@ -476,9 +360,9 @@
       ],
       "metrics": null,
       "error": null,
-      "parent_run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a_0",
-      "start_time": "2023-08-24T03:44:00.285823Z",
-      "end_time": "2023-08-24T03:44:00.288827Z",
+      "parent_run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2_0",
+      "start_time": "2023-08-24T07:06:16.276119Z",
+      "end_time": "2023-08-24T07:06:17.546048Z",
       "index": 0,
       "api_calls": [
         {
@@ -511,8 +395,8 @@
               "evidence": "Both"
             }
           ],
-          "start_time": 1692819840.285823,
-          "end_time": 1692819840.287825,
+          "start_time": 1692831976.276119,
+          "end_time": 1692831977.545051,
           "error": null,
           "children": null,
           "node_name": "prepare_examples"
@@ -526,7 +410,7 @@
         "stderr": ""
       },
       "system_metrics": {
-        "duration": 0.003004
+        "duration": 1.269929
       },
       "result": [
         {
@@ -556,9 +440,125 @@
       ]
     },
     {
+      "node": "summarize_text_content",
+      "flow_run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2",
+      "run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2_summarize_text_content_0",
+      "status": "Completed",
+      "inputs": {
+        "prompt": "system:\nPlease summarize the following text in one paragraph. 100 words.\nDo not add any information that is not in the text.\n\nuser:\nText: {{text}}\nSummary: ",
+        "deployment_name": "turbo-35",
+        "frequency_penalty": 0.0,
+        "max_tokens": 128,
+        "presence_penalty": 0.0,
+        "temperature": 0.2,
+        "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXbox Wireless Controller \u2013 Stellar Shift Special Edition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                            Translate to English\n                        \n\n\n\n\n\n\n\n                            You are shopping Microsoft Store in: {0}\n                        \n\n\n\n\n\n\n\n                            Are you looking for Microsoft Store in: {0}?\n                        \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                    Stay in {0}\n                                \n\n\n\n                                    Go to {0}\n                                \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        \n            Sign me up\n        \n        \n    \n\n\n\n        \n            Thank you!\n        \n        \n    \n\n\n\n\n\n\n\nStay informed about special deals, the latest products, events and more from Microsoft Store.\n\nEmail address (required)\n\n\n\n\nLocation (required)\n\n\nArgentina\nAustralia\nAustria\nBelgium\nBrazil\nCanada\nChile\nColombia\nCzech Republic\nDenmark\nFinland\nFrance\nGermany\nHungary\nIndia\nIreland\nIsrael\nItaly\nJapan\nLuxembourg\nMexico\nNetherlands\nNew Zealand\nNorway\nPoland\nPortugal\nSingapore\nSouth Africa\nSouth Korea\nSpain\nSweden\nTurkey\nSwitzerland\nUnited Kingdom\nUnited States\n\n\n\n\n\n\n                                    I would like information, tips, and offers about Microsoft Store and other Microsoft products and services.\n                                    \n\n                                        Privacy statement\n                                    \n.\n\n\nBy clicking sign up, I agree that I would like to hear from Microsoft and its family of companies about Microsoft Store and other Microsoft products and services.\nTo withdraw consent or manage your contact preferences, visit the\u00a0Promotional Communications Manager.\n\n\n                                        Privacy statement\n                                    \n.\n\n\n\n        Sign Up\n    \n\n\n\nYou\u2019re now signed up to receive Microsoft Store emails. Thank you!\n\n\n\n\n\n\n\n\n\n\n\n\n                  ",
+        "top_p": 1.0
+      },
+      "output": "The text does not contain any information or content. It appears to be a placeholder or template for a sign-up form for Microsoft Store emails.",
+      "metrics": null,
+      "error": null,
+      "parent_run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2_0",
+      "start_time": "2023-08-24T07:06:21.098355Z",
+      "end_time": "2023-08-24T07:06:24.434459Z",
+      "index": 0,
+      "api_calls": [
+        {
+          "name": "AzureOpenAI.chat",
+          "type": "Tool",
+          "inputs": {
+            "prompt": "system:\nPlease summarize the following text in one paragraph. 100 words.\nDo not add any information that is not in the text.\n\nuser:\nText: {{text}}\nSummary: ",
+            "deployment_name": "turbo-35",
+            "frequency_penalty": 0.0,
+            "max_tokens": 128,
+            "presence_penalty": 0.0,
+            "temperature": 0.2,
+            "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXbox Wireless Controller \u2013 Stellar Shift Special Edition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                            Translate to English\n                        \n\n\n\n\n\n\n\n                            You are shopping Microsoft Store in: {0}\n                        \n\n\n\n\n\n\n\n                            Are you looking for Microsoft Store in: {0}?\n                        \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                    Stay in {0}\n                                \n\n\n\n                                    Go to {0}\n                                \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        \n            Sign me up\n        \n        \n    \n\n\n\n        \n            Thank you!\n        \n        \n    \n\n\n\n\n\n\n\nStay informed about special deals, the latest products, events and more from Microsoft Store.\n\nEmail address (required)\n\n\n\n\nLocation (required)\n\n\nArgentina\nAustralia\nAustria\nBelgium\nBrazil\nCanada\nChile\nColombia\nCzech Republic\nDenmark\nFinland\nFrance\nGermany\nHungary\nIndia\nIreland\nIsrael\nItaly\nJapan\nLuxembourg\nMexico\nNetherlands\nNew Zealand\nNorway\nPoland\nPortugal\nSingapore\nSouth Africa\nSouth Korea\nSpain\nSweden\nTurkey\nSwitzerland\nUnited Kingdom\nUnited States\n\n\n\n\n\n\n                                    I would like information, tips, and offers about Microsoft Store and other Microsoft products and services.\n                                    \n\n                                        Privacy statement\n                                    \n.\n\n\nBy clicking sign up, I agree that I would like to hear from Microsoft and its family of companies about Microsoft Store and other Microsoft products and services.\nTo withdraw consent or manage your contact preferences, visit the\u00a0Promotional Communications Manager.\n\n\n                                        Privacy statement\n                                    \n.\n\n\n\n        Sign Up\n    \n\n\n\nYou\u2019re now signed up to receive Microsoft Store emails. Thank you!\n\n\n\n\n\n\n\n\n\n\n\n\n                  ",
+            "top_p": 1.0
+          },
+          "output": "The text does not contain any information or content. It appears to be a placeholder or template for a sign-up form for Microsoft Store emails.",
+          "start_time": 1692831981.099355,
+          "end_time": 1692831984.434459,
+          "error": null,
+          "children": [
+            {
+              "name": "openai.api_resources.chat_completion.ChatCompletion.create",
+              "type": "LLM",
+              "inputs": {
+                "api_base": "https://pmopenai.openai.azure.com/",
+                "api_type": "azure",
+                "api_version": "2023-03-15-preview",
+                "engine": "turbo-35",
+                "messages": [
+                  {
+                    "role": "system",
+                    "content": "Please summarize the following text in one paragraph. 100 words.\nDo not add any information that is not in the text."
+                  },
+                  {
+                    "role": "user",
+                    "content": "Text: \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXbox Wireless Controller \u2013 Stellar Shift Special Edition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                            Translate to English\n                        \n\n\n\n\n\n\n\n                            You are shopping Microsoft Store in: {0}\n                        \n\n\n\n\n\n\n\n                            Are you looking for Microsoft Store in: {0}?\n                        \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                    Stay in {0}\n                                \n\n\n\n                                    Go to {0}\n                                \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        \n            Sign me up\n        \n        \n    \n\n\n\n        \n            Thank you!\n        \n        \n    \n\n\n\n\n\n\n\nStay informed about special deals, the latest products, events and more from Microsoft Store.\n\nEmail address (required)\n\n\n\n\nLocation (required)\n\n\nArgentina\nAustralia\nAustria\nBelgium\nBrazil\nCanada\nChile\nColombia\nCzech Republic\nDenmark\nFinland\nFrance\nGermany\nHungary\nIndia\nIreland\nIsrael\nItaly\nJapan\nLuxembourg\nMexico\nNetherlands\nNew Zealand\nNorway\nPoland\nPortugal\nSingapore\nSouth Africa\nSouth Korea\nSpain\nSweden\nTurkey\nSwitzerland\nUnited Kingdom\nUnited States\n\n\n\n\n\n\n                                    I would like information, tips, and offers about Microsoft Store and other Microsoft products and services.\n                                    \n\n                                        Privacy statement\n                                    \n.\n\n\nBy clicking sign up, I agree that I would like to hear from Microsoft and its family of companies about Microsoft Store and other Microsoft products and services.\nTo withdraw consent or manage your contact preferences, visit the\u00a0Promotional Communications Manager.\n\n\n                                        Privacy statement\n                                    \n.\n\n\n\n        Sign Up\n    \n\n\n\nYou\u2019re now signed up to receive Microsoft Store emails. Thank you!\n\n\n\n\n\n\n\n\n\n\n\n\n                  \nSummary: "
+                  }
+                ],
+                "temperature": 0.2,
+                "top_p": 1.0,
+                "n": 1,
+                "stream": false,
+                "stop": null,
+                "max_tokens": 128,
+                "presence_penalty": 0.0,
+                "frequency_penalty": 0.0,
+                "logit_bias": {},
+                "user": ""
+              },
+              "output": {
+                "id": "chatcmpl-7qyi7sW2AL32sLZn5C0z5uSl4AvKo",
+                "object": "chat.completion",
+                "created": 1692860783,
+                "model": "gpt-35-turbo",
+                "choices": [
+                  {
+                    "index": 0,
+                    "finish_reason": "stop",
+                    "message": {
+                      "role": "assistant",
+                      "content": "The text does not contain any information or content. It appears to be a placeholder or template for a sign-up form for Microsoft Store emails."
+                    }
+                  }
+                ],
+                "usage": {
+                  "completion_tokens": 28,
+                  "prompt_tokens": 349,
+                  "total_tokens": 377
+                }
+              },
+              "start_time": 1692831981.114016,
+              "end_time": 1692831984.434459,
+              "error": null,
+              "children": null,
+              "node_name": null
+            }
+          ],
+          "node_name": "summarize_text_content"
+        }
+      ],
+      "variant_id": "",
+      "cached_run_id": null,
+      "cached_flow_run_id": null,
+      "logs": {
+        "stdout": "",
+        "stderr": ""
+      },
+      "system_metrics": {
+        "completion_tokens": 28,
+        "prompt_tokens": 349,
+        "total_tokens": 377,
+        "duration": 3.336104
+      },
+      "result": "The text does not contain any information or content. It appears to be a placeholder or template for a sign-up form for Microsoft Store emails."
+    },
+    {
       "node": "classify_with_llm",
-      "flow_run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a",
-      "run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a_classify_with_llm_0",
+      "flow_run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2",
+      "run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2_classify_with_llm_0",
       "status": "Completed",
       "inputs": {
         "prompt": "system:\nYour task is to classify a given url into one of the following categories:\nMovie, App, Academic, Channel, Profile, PDF or None based on the text content information.\nThe classification will be based on the url, the webpage text content summary, or both.\n\nuser:\nThe selection range of the value of \"category\" must be within \"Movie\", \"App\", \"Academic\", \"Channel\", \"Profile\", \"PDF\" and \"None\".\nThe selection range of the value of \"evidence\" must be within \"Url\", \"Text content\", and \"Both\".\nHere are a few examples:\n{% for ex in examples %}\nURL: {{ex.url}}\nText content: {{ex.text_content}}\nOUTPUT:\n{\"category\": \"{{ex.category}}\", \"evidence\": \"{{ex.evidence}}\"}\n\n{% endfor %}\n\nFor a given URL and text content, classify the url to complete the category and indicate evidence:\nURL: {{url}}\nText content: {{text_content}}.\nOUTPUT:",
@@ -593,16 +593,16 @@
         "max_tokens": 256,
         "presence_penalty": 0.0,
         "temperature": 0.0,
-        "text_content": "The text does not provide any information or content to summarize.",
+        "text_content": "The text does not contain any information or content. It appears to be a placeholder or template for a sign-up form for Microsoft Store emails.",
         "top_p": 1.0,
         "url": "https://www.microsoft.com/en-us/d/xbox-wireless-controller-stellar-shift-special-edition/94fbjc7h0h6h"
       },
       "output": "{\"category\": \"None\", \"evidence\": \"Both\"}",
       "metrics": null,
       "error": null,
-      "parent_run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a_0",
-      "start_time": "2023-08-24T03:44:00.291344Z",
-      "end_time": "2023-08-24T03:44:01.197694Z",
+      "parent_run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2_0",
+      "start_time": "2023-08-24T07:06:24.434459Z",
+      "end_time": "2023-08-24T07:06:26.780822Z",
       "index": 0,
       "api_calls": [
         {
@@ -641,13 +641,13 @@
             "max_tokens": 256,
             "presence_penalty": 0.0,
             "temperature": 0.0,
-            "text_content": "The text does not provide any information or content to summarize.",
+            "text_content": "The text does not contain any information or content. It appears to be a placeholder or template for a sign-up form for Microsoft Store emails.",
             "top_p": 1.0,
             "url": "https://www.microsoft.com/en-us/d/xbox-wireless-controller-stellar-shift-special-edition/94fbjc7h0h6h"
           },
           "output": "{\"category\": \"None\", \"evidence\": \"Both\"}",
-          "start_time": 1692819840.291344,
-          "end_time": 1692819841.196347,
+          "start_time": 1692831984.434459,
+          "end_time": 1692831986.777785,
           "error": null,
           "children": [
             {
@@ -665,7 +665,7 @@
                   },
                   {
                     "role": "user",
-                    "content": "The selection range of the value of \"category\" must be within \"Movie\", \"App\", \"Academic\", \"Channel\", \"Profile\", \"PDF\" and \"None\".\nThe selection range of the value of \"evidence\" must be within \"Url\", \"Text content\", and \"Both\".\nHere are a few examples:\nURL: https://play.google.com/store/apps/details?id=com.spotify.music\nText content: Spotify is a free music and podcast streaming app with millions of songs, albums, and original podcasts. It also offers audiobooks, so users can enjoy thousands of stories. It has a variety of features such as creating and sharing music playlists, discovering new music, and listening to popular and exclusive podcasts. It also has a Premium subscription option which allows users to download and listen offline, and access ad-free music. It is available on all devices and has a variety of genres and artists to choose from.\nOUTPUT:\n{\"category\": \"App\", \"evidence\": \"Both\"}\n\nURL: https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw\nText content: NFL Sunday Ticket is a service offered by Google LLC that allows users to watch NFL games on YouTube. It is available in 2023 and is subject to the terms and privacy policy of Google LLC. It is also subject to YouTube's terms of use and any applicable laws.\nOUTPUT:\n{\"category\": \"Channel\", \"evidence\": \"URL\"}\n\nURL: https://arxiv.org/abs/2303.04671\nText content: Visual ChatGPT is a system that enables users to interact with ChatGPT by sending and receiving not only languages but also images, providing complex visual questions or visual editing instructions, and providing feedback and asking for corrected results. It incorporates different Visual Foundation Models and is publicly available. Experiments show that Visual ChatGPT opens the door to investigating the visual roles of ChatGPT with the help of Visual Foundation Models.\nOUTPUT:\n{\"category\": \"Academic\", \"evidence\": \"Text content\"}\n\nURL: https://ab.politiaromana.ro/\nText content: There is no content available for this text.\nOUTPUT:\n{\"category\": \"None\", \"evidence\": \"Both\"}\n\n\nFor a given URL and text content, classify the url to complete the category and indicate evidence:\nURL: https://www.microsoft.com/en-us/d/xbox-wireless-controller-stellar-shift-special-edition/94fbjc7h0h6h\nText content: The text does not provide any information or content to summarize..\nOUTPUT:"
+                    "content": "The selection range of the value of \"category\" must be within \"Movie\", \"App\", \"Academic\", \"Channel\", \"Profile\", \"PDF\" and \"None\".\nThe selection range of the value of \"evidence\" must be within \"Url\", \"Text content\", and \"Both\".\nHere are a few examples:\nURL: https://play.google.com/store/apps/details?id=com.spotify.music\nText content: Spotify is a free music and podcast streaming app with millions of songs, albums, and original podcasts. It also offers audiobooks, so users can enjoy thousands of stories. It has a variety of features such as creating and sharing music playlists, discovering new music, and listening to popular and exclusive podcasts. It also has a Premium subscription option which allows users to download and listen offline, and access ad-free music. It is available on all devices and has a variety of genres and artists to choose from.\nOUTPUT:\n{\"category\": \"App\", \"evidence\": \"Both\"}\n\nURL: https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw\nText content: NFL Sunday Ticket is a service offered by Google LLC that allows users to watch NFL games on YouTube. It is available in 2023 and is subject to the terms and privacy policy of Google LLC. It is also subject to YouTube's terms of use and any applicable laws.\nOUTPUT:\n{\"category\": \"Channel\", \"evidence\": \"URL\"}\n\nURL: https://arxiv.org/abs/2303.04671\nText content: Visual ChatGPT is a system that enables users to interact with ChatGPT by sending and receiving not only languages but also images, providing complex visual questions or visual editing instructions, and providing feedback and asking for corrected results. It incorporates different Visual Foundation Models and is publicly available. Experiments show that Visual ChatGPT opens the door to investigating the visual roles of ChatGPT with the help of Visual Foundation Models.\nOUTPUT:\n{\"category\": \"Academic\", \"evidence\": \"Text content\"}\n\nURL: https://ab.politiaromana.ro/\nText content: There is no content available for this text.\nOUTPUT:\n{\"category\": \"None\", \"evidence\": \"Both\"}\n\n\nFor a given URL and text content, classify the url to complete the category and indicate evidence:\nURL: https://www.microsoft.com/en-us/d/xbox-wireless-controller-stellar-shift-special-edition/94fbjc7h0h6h\nText content: The text does not contain any information or content. It appears to be a placeholder or template for a sign-up form for Microsoft Store emails..\nOUTPUT:"
                   }
                 ],
                 "temperature": 0.0,
@@ -680,9 +680,9 @@
                 "user": ""
               },
               "output": {
-                "id": "chatcmpl-7qvYGZSblQrxWDFkY9EXpSz1yr3lF",
+                "id": "chatcmpl-7qyiAUq3nckOBqlXZVRlp4dMRDm9z",
                 "object": "chat.completion",
-                "created": 1692848640,
+                "created": 1692860786,
                 "model": "gpt-35-turbo-16k",
                 "choices": [
                   {
@@ -696,12 +696,12 @@
                 ],
                 "usage": {
                   "completion_tokens": 13,
-                  "prompt_tokens": 595,
-                  "total_tokens": 608
+                  "prompt_tokens": 611,
+                  "total_tokens": 624
                 }
               },
-              "start_time": 1692819840.297886,
-              "end_time": 1692819841.196347,
+              "start_time": 1692831984.458192,
+              "end_time": 1692831986.776784,
               "error": null,
               "children": null,
               "node_name": null
@@ -719,16 +719,16 @@
       },
       "system_metrics": {
         "completion_tokens": 13,
-        "prompt_tokens": 595,
-        "total_tokens": 608,
-        "duration": 0.90635
+        "prompt_tokens": 611,
+        "total_tokens": 624,
+        "duration": 2.346363
       },
       "result": "{\"category\": \"None\", \"evidence\": \"Both\"}"
     },
     {
       "node": "convert_to_dict",
-      "flow_run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a",
-      "run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a_convert_to_dict_0",
+      "flow_run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2",
+      "run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2_convert_to_dict_0",
       "status": "Completed",
       "inputs": {
         "input_str": "{\"category\": \"None\", \"evidence\": \"Both\"}"
@@ -739,9 +739,9 @@
       },
       "metrics": null,
       "error": null,
-      "parent_run_id": "67183273-6683-4a4f-8c93-36aa6f987b8a_0",
-      "start_time": "2023-08-24T03:44:01.198462Z",
-      "end_time": "2023-08-24T03:44:01.199461Z",
+      "parent_run_id": "c7798661-c349-4a45-94b9-f3d7bd4398d2_0",
+      "start_time": "2023-08-24T07:06:26.786828Z",
+      "end_time": "2023-08-24T07:06:26.788818Z",
       "index": 0,
       "api_calls": [
         {
@@ -754,8 +754,8 @@
             "category": "None",
             "evidence": "Both"
           },
-          "start_time": 1692819841.199461,
-          "end_time": 1692819841.199461,
+          "start_time": 1692831986.78782,
+          "end_time": 1692831986.788818,
           "error": null,
           "children": null,
           "node_name": "convert_to_dict"
@@ -769,7 +769,7 @@
         "stderr": ""
       },
       "system_metrics": {
-        "duration": 0.000999
+        "duration": 0.00199
       },
       "result": {
         "category": "None",

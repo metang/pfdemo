@@ -49,7 +49,27 @@ nodes:
   inputs: {}
   use_variants: false
 - name: classify_with_llm
-  use_variants: true
+  type: llm
+  source:
+    type: code
+    path: classify_with_llm.jinja2
+  inputs:
+    deployment_name: gpt-35-turbo-16k
+    temperature: 0
+    top_p: 1
+    stop: ""
+    max_tokens: 256
+    presence_penalty: 0
+    frequency_penalty: 0
+    logit_bias: ""
+    url: ${inputs.url}
+    examples: ${prepare_examples.output}
+    text_content: ${summarize_text_content.output}
+  provider: AzureOpenAI
+  connection: PMOpenAI
+  api: chat
+  module: promptflow.tools.aoai
+  use_variants: false
 - name: convert_to_dict
   type: python
   source:
@@ -58,53 +78,4 @@ nodes:
   inputs:
     input_str: ${classify_with_llm.output}
   use_variants: false
-node_variants:
-  classify_with_llm:
-    default_variant_id: variant_0
-    variants:
-      variant_0:
-        node:
-          name: classify_with_llm
-          type: llm
-          source:
-            type: code
-            path: classify_with_llm.jinja2
-          inputs:
-            deployment_name: gpt-35-turbo-16k
-            temperature: 0.01
-            top_p: 1
-            stop: ""
-            max_tokens: 512
-            presence_penalty: 0
-            frequency_penalty: 0
-            logit_bias: ""
-            url: ${inputs.url}
-            examples: ${prepare_examples.output}
-            text_content: ${summarize_text_content.output}
-          provider: AzureOpenAI
-          connection: PMOpenAI
-          api: chat
-          module: promptflow.tools.aoai
-      variant_1:
-        node:
-          name: classify_with_llm
-          type: llm
-          source:
-            type: code
-            path: classify_with_llm__variant_1.jinja2
-          inputs:
-            deployment_name: gpt-4-32k
-            temperature: 0
-            top_p: 1
-            stop: ""
-            max_tokens: 128
-            presence_penalty: 0
-            frequency_penalty: 0
-            logit_bias: ""
-            url: ${inputs.url}
-            examples: ${prepare_examples.output}
-            text_content: ${summarize_text_content.output}
-          provider: AzureOpenAI
-          connection: PMOpenAI
-          api: chat
-          module: promptflow.tools.aoai
+node_variants: {}
